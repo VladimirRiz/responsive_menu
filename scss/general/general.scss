@@ -1,0 +1,43 @@
+@import "../colors/colors.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $white;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+section {
+  color: $white;
+  position: relative;
+  width: 100%;
+  & + section {
+    margin-bottom: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  overflow: hidden;
+  min-height: 100%;
+  display: grid;
+  grid-template: {
+    rows: auto 1fr auto;
+    columns: 100%;
+  }
+}

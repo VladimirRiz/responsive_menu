@@ -1,0 +1,84 @@
+// :root {
+//   font-size: calc(1vw + 0.6em);
+// }
+
+h1 {
+  // font-size: 2.7rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: {
+    // size: 2rem;
+    style: oblique;
+  }
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+  color: #ffe506;
+  line-height: 1.5;
+  display: grid;
+  grid: {
+    template-columns: 1fr auto 1fr;
+    template-rows: 20px 0;
+    gap: 20px;
+  }
+  align-items: center;
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+    background-color: #ffe506;
+    height: 100%;
+  }
+  &:after {
+    clip-path: polygon(0 50%, 80% 50%, 0 45%);
+  }
+  &:before {
+    clip-path: polygon(100% 50%, 20% 50%, 100% 45%);
+  }
+}
+
+h3 {
+  // font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  // font-size: 1.2rem;
+  padding: 0.5em;
+}
+
+li,
+a,
+button,
+input {
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  font-size: 0.8rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+}
+
+input {
+  color: rgb(102, 102, 102);
+}
